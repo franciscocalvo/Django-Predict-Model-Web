@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td{
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        th{
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Modelo de Predicción</th>
+          <th>Resultado</th>
+        </tr>
+        <tr>
+          <td>RandomForest</td>
+          <td>{{predictionRandomForest}}€</td>
+        </tr>
+        <tr>
+          <td>Knn Neighbours</td>
+          <td>{{predictionkNN}}€</td>
+        </tr>
+        <tr>
+           <td>Bayesian Ridge Regression</td>
+           <td>{{predictionBayesian}}€</td>
+        </tr>
+        <tr>
+            <td>Linear Regressor</td>
+            <td>{{predictionLinearRegressor}}€</td>
+        </tr>
+        <tr>
+            <td>Tensor Flow</td>
+            <td>{{predicitionTensorFlow}}€</td>
+        </tr>
+      </table>
+</body>
+</html>
